@@ -5,10 +5,10 @@ const Menu = ({items}) => {
     <div>
         {
             items.map((foodItem) => {
-                const[id,title,price,img,desc] = foodItem;
+                const{id,title,price,img,desc} = foodItem;
                 return(
                     <div key={id}>
-                        <img src={img} alt={title}/>
+                        <img src={img} alt={title}></img>
                         <div>
                             <h2>{title}</h2>
                             <h2>${price}</h2>
